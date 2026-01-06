@@ -34,15 +34,15 @@ document.addEventListener('keydown', function (e) {
 const btnScroll = document.querySelector('.btn--scroll-to')
 const section1 = document.querySelector('#section--1')
 
-// btnScroll.addEventListener('click', function () {
-  // window.scrollTo({
-  //   left: section1.getBoundingClientRect().left + window.pageXOffset,
-  //   top: section1.getBoundingClientRect().top + window.pageYOffset,
-  //   behavior: "smooth",
+btnScroll.addEventListener('click', function () {
+  window.scrollTo({
+    left: section1.getBoundingClientRect().left + window.pageXOffset,
+    top: section1.getBoundingClientRect().top + window.pageYOffset,
+    behavior: "smooth",
 
-  // })
-//   section1.scrollIntoView({behavior: 'smooth'})
-// })
+  })
+  section1.scrollIntoView({behavior: 'smooth'})
+})
 
 document.querySelector(".nav__links").addEventListener('click', function(e) {
   e.preventDefault()
